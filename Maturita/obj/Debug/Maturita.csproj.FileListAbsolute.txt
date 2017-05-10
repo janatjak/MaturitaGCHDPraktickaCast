@@ -1,0 +1,6 @@
+/Users/pepa/Projects/Maturita/Maturita/bin/Debug/Maturita.exe
+/Users/pepa/Projects/Maturita/Maturita/bin/Debug/Maturita.pdb
+/Users/pepa/Projects/Maturita/Maturita/obj/Debug/Maturita.csprojResolveAssemblyReference.cache
+/Users/pepa/Projects/Maturita/Maturita/obj/Debug/Maturita.csproj.CoreCompileInputs.cache
+/Users/pepa/Projects/Maturita/Maturita/obj/Debug/Maturita.exe
+/Users/pepa/Projects/Maturita/Maturita/obj/Debug/Maturita.pdb

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using Maturita._11_Qeue_Stack;
 
 namespace Maturita
@@ -11,7 +12,6 @@ namespace Maturita
             Console.WriteLine("Qeue" + Tester.TestMyQeue());
             Console.WriteLine("Fibo" + _13_Algorithm_Recursion.Tester.TestFibonacci());
             Console.WriteLine("Factorial" + _13_Algorithm_Recursion.Tester.TestFactorial());
-
         }
     }
 }

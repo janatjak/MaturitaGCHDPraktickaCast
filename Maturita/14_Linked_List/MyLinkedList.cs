@@ -9,8 +9,6 @@ namespace Maturita._14_Linked_List
         public MyLinkedList(T value)
         {
             _first = new Node<T>(value);
-
-            var li = new LinkedList<int>();
         }
 
         private Node<T> GetFirstNodeWithValue(T value, Node<T> node)
@@ -27,14 +25,40 @@ namespace Maturita._14_Linked_List
             }
         }
 
+        private Node<T> GetPreviousNode(Node<T> node)
+        {
+            var previousNode = _first;
+
+            while (true)
+            {
+                if (previousNode == null)
+                    return null;
+
+                if (node.Equals(previousNode.Next))
+                    return node;
+
+                previousNode = previousNode.Next;
+            }
+        }
+
         public void InsertBefore(Node<T> node, T value)
         {
+            var newNode = new Node<T>(value) {Next = node};
 
+            if (node.Equals(_first))
+            {
+                _first = newNode;
+                return;
+            }
+
+            var previousNode = GetPreviousNode(node);
+            previousNode.Next = newNode;
         }
 
         public void InsertAfter(Node<T> node, T value)
         {
-
+            var newNode = new Node<T>(value) {Next = node.Next};
+            node.Next = newNode;
         }
 
         public bool Contains(T value)
@@ -44,7 +68,15 @@ namespace Maturita._14_Linked_List
 
         public void DeleteFirst(T value)
         {
-            var node = FindFirst(value)
+            var node = FindFirst(value);
+            if (node == null)
+                return;
+
+            if (node.Equals(_first))
+                _first = _first.Next;
+
+            var previousNode = GetPreviousNode(node);
+            previousNode.Next = node.Next;
         }
 
         public Node<T> FindFirst(T value)

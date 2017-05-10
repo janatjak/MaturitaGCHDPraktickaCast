@@ -53,6 +53,8 @@
     <Compile Include="14_Linked_List\Node.cs" />
     <Compile Include="15_Binary_Tree\BinaryTree.cs" />
     <Compile Include="15_Binary_Tree\Node.cs" />
+    <Compile Include="16_Sorting_Algorithm\Sorter.cs" />
+    <Compile Include="16_Sorting_Algorithm\Tester.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
